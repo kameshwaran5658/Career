@@ -163,6 +163,7 @@ html {
 
 .contact-info-top,
 .contact-info-bottom {
+    margin-top: 30px;
     margin-bottom: 15px;
 }
 
@@ -184,7 +185,7 @@ html {
     text-align: left;
     margin-bottom: 5px;
     line-height: 20px;
-    margin-top: 30px;
+    padding-top: 40px;
 }
 
 .contact-phone,
@@ -192,7 +193,7 @@ html {
 .contact-email2 {
 
     font-family: var(--font-poppins);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .contact-email1 {
@@ -208,6 +209,7 @@ html {
 
 .s {
     margin-top: 60px;
+    padding-top: 40px;
 }
 
 .contact-description p {
@@ -218,7 +220,9 @@ html {
 .contact-action:hover {
     transform: scale(1.05);
 }
-
+.contact-action{
+    margin-top: 40px;
+}
 .contact-action-button {
     display: flex;
     align-items: center;
@@ -227,7 +231,7 @@ html {
     cursor: pointer;
     background-color: #000;
     border-radius: 31px;
-    width: 98%;
+    width: 70%;
     padding: 5px;
     height: 40px;
     overflow: hidden;
@@ -695,7 +699,7 @@ html {
         width: 100%;
         padding: 16px;
     }
-
+    
     .contact-info-form {
         display: flex;
         flex-direction: column;
@@ -725,8 +729,9 @@ html {
     }
 
     .contact-action {
-        width: 50%;
+        width: 70%;
         margin: 20px auto;
+        
         display: flex;
         justify-content: center;
     }
@@ -826,7 +831,7 @@ html {
     }
 
     .contact-action {
-        width: 70%;
+        width: 90%;
         font-size: 12px;
     }
 
