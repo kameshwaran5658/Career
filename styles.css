@@ -3,6 +3,11 @@
     --font-poppins: 'Poppins', sans-serif;
     --font-size-2xl: 18px;
     --color-gray: #040201;
+    --font-size-2xl: 20px;
+    --font-size-xl: 16px;
+    --font-size-lg: 14px;
+    --font-size-md: 12px;
+    
 }
 
 body,
@@ -18,6 +23,7 @@ html {
     justify-content: center;
     align-items: center;
     height: 100px;
+    position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -28,6 +34,7 @@ html {
     width: 100%;
     max-width: 1200px;
     position: relative;
+    padding: 0 20px;
 }
 
 .title {
@@ -48,8 +55,7 @@ html {
     right: 20px;
 
 }
-
-silversky-builders {
+.silversky-builders {
     font-family: var(--font-poppins);
 }
 
@@ -84,8 +90,6 @@ silversky-builders {
     font-family: var(--font-poppins);
     padding: 20px 0;
 }
-
-
 /*contact-section*/
 
 .contact-section {
@@ -223,7 +227,7 @@ silversky-builders {
     cursor: pointer;
     background-color: #000;
     border-radius: 31px;
-    width: 100%;
+    width: 98%;
     padding: 5px;
     height: 40px;
     overflow: hidden;
@@ -466,131 +470,40 @@ silversky-builders {
 }
 
 /*preks-section*/
-
-.perks-section {
-    width: 95%;
-    margin-top: 40px;
-    position: relative;
-    height: auto;
-    text-align: center;
-    font-size: var(--font-size-2xl);
-    color: var(--color-gray);
-    font-family: var(--font-poppins);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-}
-
-.perks-title {
-    grid-column: span 4;
-    font-size: 48px;
-    line-height: 53px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 53px;
-    margin-bottom: 20px;
-}
-
-.perks-item {
-    border: 1px solid rgba(200, 195, 195, 0.717);
-    box-sizing: border-box;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.perk-icon {
-    width: 50px;
-    height: auto;
-    overflow: hidden;
+.benefits-section-title {
     margin-top: 30px;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.benefit-item {
+   width: 150px;
+   height: 200px;
+    display: flex;           
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;     
+    margin-top: 40px;
+    text-align: center;
+    position: relative;      
 }
 
-.perk-description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.benefit-icon {
+    width: 45px; 
     height: auto;
+}
+.benefit-description {
     margin-top: 10px;
-
+}
+.benefit-text {
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.perk-text {
-    line-height: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-top: 5px;
-
-}
-
-.perk-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.perk-text-line {
-    line-height: 26px;
-}
-
-.perks-item:hover {
+.benefit-item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-.perk-icon.learning-development {
-    width: 50px;
-    height: 65px;
-
-}
-
-.perk-icon.increment-policy {
-    width: 50px;
-    height: 55px;
-}
-img.perk-icon{
-    width: 45px;
-    height: 45px;
-}
-.perk-icon.open-door-policy {
-    width: 38px;
-    height: 50px;
-}
-
-.perk-icon.achievements-awards {
-    width: 40px;
-    height: 73px;
-}
-
-.perk-icon.flexible-hours {
-    width: 60px;
-    height: 61px;
-}
-
-.perk-icon.paid-holidays {
-    width: 52px;
-    height: 53px;
-}
-
-.perk-icon.food-beverages {
-    width: 53px;
-    height: 54px;
-}
-
 
 .awards-section {
     position: relative;
@@ -713,12 +626,10 @@ img.perk-icon{
     font-family: var(--font-poppins);
 }
 
-/* General Transition for Smooth Effects */
 .transition {
     transition: all 0.3s ease;
 }
 
-/* Hover Animation for Buttons */
 .contact-action-button:hover {
     transform: scale(1.05);
 }
@@ -736,4 +647,190 @@ img.perk-icon{
 .action-link:hover {
     transform: scale(1.05);
 }
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
 
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+
+    .title {
+        font-size: 22px;
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    .logo {
+        height: 50px;
+        width: auto;
+    }
+
+    .section {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .employees-always-feel-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .silversky-builders-firmly-adh {
+        font-size: 20px;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .contact-info-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+
+    .contact-info, .contact-form {
+        flex: 1 1 100%;
+    }
+
+    .contact-subtitle {
+        font-size: 34px;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    .form-checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .form-checkbox-group span {
+        font-size: 14px;
+    }
+
+    .contact-action {
+        width: 50%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .upload-box {
+        height: auto;
+    }
+
+    .upload-text {
+        font-size: 16px;
+    }
+
+    .ci {
+        width: 35px;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: 100px;
+        padding: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .title {
+        font-size: 20px;
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    .logo {
+        height: 40px;
+        width: auto;
+    }
+
+    .section {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .employees-always-feel-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .silversky-builders-firmly-adh {
+        font-size: 16px;
+    }
+
+    .contact-section,
+    .contact-container,
+    .contact-form,
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-title {
+        margin-top: 20px;
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    .contact-subtitle {
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .form-checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .upload-text {
+        font-size: 14px;
+    }
+
+    .submit-button p {
+        font-size: 14px;
+    }
+
+    .submit-button img {
+        height: 16px;
+    }
+
+    .contact-action {
+        width: 70%;
+        font-size: 12px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+}
